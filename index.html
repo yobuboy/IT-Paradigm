@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+</head>
+<body style="background-color: aquamarine;">
+    <style>
+        .box {
+            width: 200;
+            padding: 20px;
+            border: 4px solid black;
+            margin: 16px;
+            background: white;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px;
+        }
+        .menu {
+            display: flex;
+            gap: 21px;
+        }
+    </style>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <nav class="menu">
+            <a>Home</a><a>About</a><a>Contact</a>
+        </nav>
+    </div>
+    <div class="box">
+        Content
+    </div>
+    <h1 style="color: blueviolet;">Hello World!</h1>
+    <p style="font-size: 67px;">This is my first HTML page</p>
+    <p>This is a break tag that put the <br> next text paragraph under it</p>
+    <a href="https://typetest.io">Typetest</a>
+    <img src="data:image/jpeg;base64,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" alt="Thi is cardo dalisay" width="300px" height="300px">
+    <h1>This is my 3 favorite websites</h1>
+    <ol>
+        <li>Wikifandom</li>
+        <li>Typetest.io</li>
+        <li>Youtube Music</li>
+    </ol>
+    <h1>This is my 3 favorite hobbies</h1>
+    <ul>
+        <li>Programming</li>
+        <li>Boxing</li>
+        <li>Cramming</li>
+    </ul>
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Year</th>
+        <tr>
+            <td>Andrei</td>
+            <td>BSIT</td>
+            <td>1B</td>
+        </tr>
+    </table>
+</body>
+</html>

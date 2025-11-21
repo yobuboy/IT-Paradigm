@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            position: relative;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav a{
+            text-decoration: none;
+            color: darkgray;
+            padding-right: 1%;
+        }
+        .item {
+            display: flex;
+            gap: 15px;
+            padding-left: 1%;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: cursive;
+            color: darkgray;
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .details {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(120, 110, 110);
+        }
+        .details h1{
+            font-size: 60px;
+        }
+        .btn {
+            background-color: purple;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        .image1, .image2 {
+            position: absolute;
+        }
+        .image1 {
+            left: 0;
+            bottom: 1;
+            z-index: -1;
+        }
+        .image2 {
+            right: 0;
+            top: 1;
+            z-index: -1;
+        }
+    </style>
+    <div class="nav">
+        <ul class="item">
+            <a>Renters</a><a>Homeowners</a><a>Car</a><a>Pet</a><a>Life</a><a>Gveback</a>
+        </ul>
+        <a class="account">My Account</a>
+    </div>
+    <header class="header">
+        <h1>Lemonade</h1>
+    </header>
+
+    <main class="main">
+        <div class="details">
+            <h1>Forget everything you<br>know about insurance.</h1>
+            <p>Instant everything. Incredible prices. Big heart.</p>
+        </div>
+        <button class="btn">
+            CHECK OUR PRICES
+        </button>
+    </main>
+    <img src="image1.png" alt="this is image 1" class="image1">
+    <img src="image2.png" alt="this is image 2" class="image2">
+</body>
+</html>     
