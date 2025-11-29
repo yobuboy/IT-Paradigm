@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Fundamentals</title>
+    <style>
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .card {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            background-color: chocolate;
+        }
+        @media (max-width: 1919px) {
+            .card {
+                background-color: aquamarine;
+            }
+        }
+        @media (max-width: 1439px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .card {
+                background-color: rgb(60, 61, 141);
+            }
+        }
+        @media (max-width: 1023px) {
+            .card {
+                background-color: rgb(196, 69, 86);
+            }
+        }
+        @media (max-width: 767px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+            .card {
+                background-color: rgb(134, 86, 30);
+            }
+        }
+        @media (max-width: 424px) {
+            .card {
+                background-color: rgb(214, 62, 219);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card">DIV1</div>
+        <div class="card">DIV2</div>
+        <div class="card">DIV3</div>
+        <div class="card">DIV4</div>
+        <div class="card">DIV5</div>
+        <div class="card">DIV6</div>
+    </div>
+</body>
+</html>
